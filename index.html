@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La parabola del biscione pieno di sè</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #f33;
+    }
+    .record {
+      margin: 1rem 0;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border: 2px dashed #f33;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .record:hover {
+      background-color: #222;
+    }
+    .animation {
+      margin-top: 1rem;
+      display: none;
+    }
+    .animation img {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>La parabola del biscione pieno di sè</h1>
+
+  <div class="record" onclick="showAnimation('anim1')">
+    1) Milan-Inter 6-0 (11 maggio 2001): Una delle sconfitte più pesanti subite nel Derby della Madonnina.
+    <div class="animation" id="anim1">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWZxeHh2M2Fzb2NuYzJ4ejU5dTd2YndzM2w4ZXF5bW8xdTVrM2c5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B2g3vZyLGBtU/giphy.gif" alt="Giroud con la lingua di fuori">
+    </div>
+  </div>
+
+  <div class="record" onclick="showAnimation('anim2')">
+    2) Finale di Champions League (31 maggio 2025 vs. PSG): Sconfitta per 5-0: il passivo più ampio di sempre in una finale di Champions League.
+    <div class="animation" id="anim2">
+      <img src="https://media.giphy.com/media/26gssIytJvy1b1THO/giphy.gif" alt="Manita gigante e Inzaghi sconsolato">
+    </div>
+  </div>
+
+  <div class="record" onclick="showAnimation('anim3')">
+    3) Due gol subiti nei primi 20 minuti: altro record negativo per una finale.
+    <div class="animation" id="anim3">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3B6dTN4c25zeDBncm1yaWxnNGRvM3d2cnNocWttNWw4bzJkNHVyYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/d3mlE7uhX8KFgEmY/giphy.gif" alt="Marotta sconsolato">
+    </div>
+  </div>
+
+  <script>
+    function showAnimation(id) {
+      const anim = document.getElementById(id);
+      if (anim.style.display === 'block') {
+        anim.style.display = 'none';
+      } else {
+        anim.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
